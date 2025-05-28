@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Understanding Gradient Descent",
+      "date": "2024-11-01",
+      "description": "A deep dive into how gradient descent works with visuals and code.",
+      "tags": ["ML Basics", "Optimization"],
+      "slug": "gradient-descent"
+    },
+    {
+      "title": "Kaggle Titanic EDA",
+      "date": "2025-01-15",
+      "description": "Exploratory data analysis on the Titanic dataset and feature engineering tips.",
+      "tags": ["Kaggle", "EDA"],
+      "slug": "titanic-eda"
+    }
+  ]
+  

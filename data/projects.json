@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Stock Price Prediction",
+      "description": "LSTM-based model predicting stock movements.",
+      "github": "https://github.com/youruser/stock-lstm",
+      "demo": "",
+      "tags": ["Deep Learning", "Finance", "Time Series"]
+    },
+    {
+      "title": "Sentiment Analysis on Tweets",
+      "description": "NLP project using transformers.",
+      "github": "https://github.com/youruser/sentiment-transformers",
+      "demo": "",
+      "tags": ["NLP", "Transformers", "Text"]
+    }
+  ]
+  

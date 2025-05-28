@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="contact.html"  class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contact-container">
+    <h1>Contact Me</h1>
+    <p>Interested in collaborating, hiring, or just chatting? Reach out below!</p>
+
+    <!-- ✅ Contact Form -->
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" name="_replyto" id="email" required />
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- 🗓️ Calendar Section -->
+    <div class="calendar-link">
+      <h3>Want to schedule a meeting?</h3>
+      <a href="https://calendly.com/your-username/15min" target="_blank" class="button">Book a 15-min Call</a>
+    </div>
+
+    <!-- Optional Direct Links -->
+    <div class="direct-links">
+      <p>Or email me directly at: <a href="mailto:your.email@iit.ac.in">your.email@iit.ac.in</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">yourprofile</a></p>
+    </div>
+  </main>
+</body>
+</html>
