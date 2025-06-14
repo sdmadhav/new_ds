@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me</title>
   <!-- Add the modern theme -->
   <link rel="stylesheet" href="assets/css/modern-theme.css" />
   <!-- Keep your existing styles for page-specific content -->
   <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
 </head>
+
 <body>
   <!-- Add particles background -->
   <div class="bg-particles" id="particles"></div>
-  
+  <button id="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+    <span class="hamburger-icon"></span>
+  </button>
   <header>
-    <nav>
+    <nav id="nav-menu" aria-hidden="true">
       <ul>
         <li><a href="index.html">Home</a></li> <!-- Update active class -->
         <li><a href="about.html" class="active">About</a></li>
@@ -31,12 +35,14 @@
       <h1>About Me</h1>
       <!-- <p>Page description</p> -->
     </div>
-    
+
 
     <section class="academic">
       <h2>Academic Background</h2>
       <p>
-        I am a 2nd-year M.Tech student in Data Science at IIT, with a strong foundation in machine learning, statistical modeling, and quantitative finance. My coursework includes Advanced ML, Deep Learning, and Statistical Inference.
+        I am a 2nd-year M.Tech student in Data Science at IIT, with a strong foundation in machine learning, statistical
+        modeling, and quantitative finance. My coursework includes Advanced ML, Deep Learning, and Statistical
+        Inference.
       </p>
     </section>
 
@@ -63,7 +69,8 @@
     <section class="personal">
       <h2>Beyond Academics</h2>
       <p>
-        I’m passionate about open-source contributions and solving real-world data challenges. When not coding, I enjoy chess and hiking.
+        I’m passionate about open-source contributions and solving real-world data challenges. When not coding, I enjoy
+        chess and hiking.
       </p>
     </section>
   </div>
@@ -71,5 +78,20 @@
   <!-- Add particles script -->
   <script src="assets/js/particles.js"></script>
   <!-- Your existing scripts -->
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+
+      navToggle.setAttribute('aria-expanded', !expanded);
+      navMenu.setAttribute('aria-hidden', expanded);
+    });
+  </script>
 </body>
+
 </html>

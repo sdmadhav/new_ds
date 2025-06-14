@@ -297,10 +297,12 @@
 
 <body>
   <div class="bg-particles" id="particles"></div>
-
+  <button id="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+    <span class="hamburger-icon"></span>
+  </button>
   <header>
-    <nav>
-      <ul>
+    <nav id="nav-menu" aria-hidden="true">
+      <ul >
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
@@ -459,6 +461,21 @@
           behavior: 'smooth'
         });
       });
+    });
+
+  </script>
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+
+      navToggle.setAttribute('aria-expanded', !expanded);
+      navMenu.setAttribute('aria-hidden', expanded);
     });
   </script>
 </body>

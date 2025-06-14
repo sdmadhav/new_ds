@@ -13,11 +13,13 @@
 <body>
   <!-- Add particles background -->
   <div class="bg-particles" id="particles"></div>
-
+  <button id="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+    <span class="hamburger-icon"></span>
+  </button>
   <header>
-    <nav>
+    <nav id="nav-menu" aria-hidden="true">
       <ul>
-        <li><a href="index.html" >Home</a></li> <!-- Update active class -->
+        <li><a href="index.html">Home</a></li> <!-- Update active class -->
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="blog.html" class="active">Blog</a></li>
@@ -37,13 +39,27 @@
     <div id="blog-list"></div>
 
     <!-- Your existing page content goes here -->
-    
+
   </div>
-  
+
   <!-- Add particles script -->
   <script src="assets/js/particles.js"></script>
   <!-- Your existing scripts -->
   <script src="assets/js/blog.js"></script>
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+
+      navToggle.setAttribute('aria-expanded', !expanded);
+      navMenu.setAttribute('aria-hidden', expanded);
+    });
+  </script>
 </body>
 
 </html>

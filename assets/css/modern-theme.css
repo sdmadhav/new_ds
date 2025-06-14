@@ -50,6 +50,97 @@ header {
   padding: 1rem 0;
 }
 
+/* Hamburger button base styles */
+#nav-toggle {
+  display: none; /* hidden on desktop */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  position: relative;
+  width: 32px;
+  height: 24px;
+  z-index: 110; /* above nav */
+}
+
+/* Hamburger icon lines */
+.hamburger-icon,
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: '';
+  display: block;
+  background: white;
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  width: 100%;
+  transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-icon {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-icon::before {
+  top: 0;
+}
+
+.hamburger-icon::after {
+  bottom: 0;
+}
+
+/* Active state: transform hamburger to 'X' */
+#nav-toggle.active .hamburger-icon {
+  background: transparent;
+}
+
+#nav-toggle.active .hamburger-icon::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active .hamburger-icon::after {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  #nav-toggle {
+    display: block; /* show hamburger on mobile */
+  }
+
+  nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    margin-top: 0.5rem;
+  }
+
+  nav.active {
+    max-height: 500px; /* enough height to show full menu */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav li {
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 nav ul {
   list-style: none;
   display: flex;
@@ -58,23 +149,7 @@ nav ul {
   flex-wrap: wrap;
 }
 
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center; /* center the items horizontally */
-    gap: 1rem; /* smaller gap vertically */
-  }
 
-  nav ul li {
-    width: 100%; /* each nav item takes full width */
-    text-align: center; /* center text inside */
-  }
-
-  nav a {
-    display: block; /* make anchor fill the li */
-    width: 100%;
-  }
-}
 
 nav a {
   color: white;
