@@ -48,6 +48,15 @@ header {
   top: 0;
   z-index: 100;
   padding: 1rem 0;
+  visibility: hidden;  /* Hide header initially */
+  opacity: 0; /* Fade effect when hidden */
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+/* Show header when nav-toggle is active */
+header.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Hamburger button base styles */
@@ -64,7 +73,7 @@ header {
   z-index: 110; /* above nav */
 }
 
-/* Hamburger icon lines */
+/* Hamburger icon lines (3 lines by default) */
 .hamburger-icon,
 .hamburger-icon::before,
 .hamburger-icon::after {
@@ -84,11 +93,11 @@ header {
 }
 
 .hamburger-icon::before {
-  top: 0;
+  top: -8px; /* position the first line */
 }
 
 .hamburger-icon::after {
-  bottom: 0;
+  bottom: -8px; /* position the last line */
 }
 
 /* Active state: transform hamburger to 'X' */
@@ -117,10 +126,12 @@ header {
     overflow: hidden;
     transition: max-height 0.35s ease;
     margin-top: 0.5rem;
+    visibility: hidden; /* Initially hidden */
   }
 
   nav.active {
     max-height: 500px; /* enough height to show full menu */
+    visibility: visible; /* Show when active */
   }
 
   nav ul {
@@ -140,7 +151,7 @@ header {
   }
 }
 
-
+/* Normal desktop navigation (flex row) */
 nav ul {
   list-style: none;
   display: flex;
@@ -148,8 +159,6 @@ nav ul {
   gap: 2rem;
   flex-wrap: wrap;
 }
-
-
 
 nav a {
   color: white;

@@ -464,20 +464,8 @@
     });
 
   </script>
-  <script>
-    const navToggle = document.getElementById('nav-toggle');
-    const navMenu = document.getElementById('nav-menu');
+  <script src="assets/js/nav-toggle.js"></script>
 
-    navToggle.addEventListener('click', () => {
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
-
-      navToggle.classList.toggle('active');
-      navMenu.classList.toggle('active');
-
-      navToggle.setAttribute('aria-expanded', !expanded);
-      navMenu.setAttribute('aria-hidden', expanded);
-    });
-  </script>
 </body>
 
 </html>
