@@ -9,34 +9,33 @@
   <link rel="stylesheet" href="assets/css/modern-theme.css" />
 
   <style>
-    /* Typing animation */
-    @keyframes typing {
-      0% {
-        width: 0;
-      }
-      100% {
-        width: 100%;
-      }
-    }
-
     .typing-effect {
       display: inline-block;
       overflow: hidden;
       white-space: nowrap;
+      /* Keeps everything on a single line until it wraps */
       width: 0;
-      /* animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite; */
-      animation: typing 4s steps(30) 1s infinite, blink 0.75s step-end infinite;
+      animation: typing 6s steps(40) 1s infinite, blink 0.75s step-end infinite;
+    }
 
+    .typing-effect span {
+      display: inline-block;
+    }
+
+    @keyframes typing {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
     }
 
     @keyframes blink {
       50% {
         border-color: transparent;
       }
-    }
-
-    .highlight {
-      color: #007bff; /* Highlight color for your name */
     }
   </style>
 </head>
@@ -65,7 +64,11 @@
       <div class="intro-container">
         <img src="assets/images/profile.jpg" alt="Madhav Deshatwad" class="profile-pic" />
         <div class="intro-text">
-          <h1 class="typing-effect">Hi, I'm <span class="highlight">Madhav Deshatwad</span></h1>
+          <h1 class="typing-effect">
+            Hi, I'm <span class="highlight">Deshatwad<br>
+            Madhav</span>
+          </h1>
+
           <p>
             M.Tech in Data Science @ IIT Palakkad | B.Tech @ IIT Ropar<br />
             Machine Learning • Data Engineering • Quantitative Analysis
