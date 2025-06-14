@@ -631,8 +631,7 @@ footer {
 
 
 
-
-  /* ===== Blog List & Cards ===== */
+/* ===== Blog List & Cards ===== */
   #blog-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -725,8 +724,9 @@ footer {
       grid-template-columns: 1fr;
     }
   
-    header nav ul {
+    /* header nav ul {
       flex-direction: column;
       gap: 0.5rem;
-    }
+    } */
   }
+  
