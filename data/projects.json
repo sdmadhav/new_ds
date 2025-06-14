@@ -1,17 +1,30 @@
 [
-    {
-      "title": "Stock Price Prediction",
-      "description": "LSTM-based model predicting stock movements.",
-      "github": "https://github.com/youruser/stock-lstm",
-      "demo": "",
-      "tags": ["Deep Learning", "Finance", "Time Series"]
-    },
-    {
-      "title": "Sentiment Analysis on Tweets",
-      "description": "NLP project using transformers.",
-      "github": "https://github.com/youruser/sentiment-transformers",
-      "demo": "",
-      "tags": ["NLP", "Transformers", "Text"]
-    }
-  ]
-  
+      {
+        "title": "Stock Price Prediction",
+        "description": "Advanced LSTM-based model for predicting stock market movements with high accuracy. Features real-time data processing and interactive visualizations.",
+        "github": "https://github.com/youruser/stock-lstm",
+        "demo": "https://stock-prediction-demo.com",
+        "tags": ["Deep Learning", "Finance", "Time Series", "Python"]
+      },
+      {
+        "title": "Sentiment Analysis on Tweets",
+        "description": "Comprehensive NLP project using state-of-the-art transformers to analyze sentiment in social media data with real-time processing capabilities.",
+        "github": "https://github.com/youruser/sentiment-transformers",
+        "demo": "",
+        "tags": ["NLP", "Transformers", "Text Analysis", "Machine Learning"]
+      },
+      {
+        "title": "E-Commerce Platform",
+        "description": "Full-stack e-commerce solution with modern UI/UX, payment integration, and advanced admin dashboard for inventory management.",
+        "github": "https://github.com/youruser/ecommerce-platform",
+        "demo": "https://ecommerce-demo.com",
+        "tags": ["React", "Node.js", "MongoDB", "Full Stack"]
+      },
+      {
+        "title": "Weather Prediction App",
+        "description": "Beautiful weather application with advanced forecasting algorithms, location-based services, and stunning visual representations.",
+        "github": "https://github.com/youruser/weather-app",
+        "demo": "https://weather-app-demo.com",
+        "tags": ["JavaScript", "API Integration", "UI/UX", "Mobile"]
+      }
+    ]

@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Achievements | Your Name</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Add the modern theme -->
+  <link rel="stylesheet" href="assets/css/modern-theme.css" />
+
 </head>
+
 <body>
+  <!-- Add particles background -->
+  <div class="bg-particles" id="particles"></div>
+
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" >Home</a></li> <!-- Update active class -->
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="blog.html">Blog</a></li>
@@ -20,41 +28,54 @@
     </nav>
   </header>
 
-  <main class="achievements-container">
-    <h1>Achievements</h1>
+  <div class="container">
+    <!-- <div class="page-title">
+      <h1>Achievements</h1>
+      <p>Page description</p>
+    </div> -->
 
-    <section class="competitions">
-      <h2>Competitions</h2>
-      <ul>
-        <li>
-          <strong>Kaggle Competitions:</strong> Ranked Top 5% in multiple ML challenges (Titanic, House Prices)
-        </li>
-        <li>
-          <strong>Hackathons:</strong> Winner at IIT Data Science Hackathon 2023
-        </li>
-      </ul>
-    </section>
+    <!-- Your existing page content goes here -->
+    <main class="achievements-container">
+      <h1>Achievements</h1>
 
-    <section class="certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Deep Learning Specialization - Coursera (by Andrew Ng)</li>
-        <li>Machine Learning A-Z™ - Udemy</li>
-        <li>Certified Data Scientist - IBM</li>
-      </ul>
-    </section>
+      <section class="competitions">
+        <h2>Competitions</h2>
+        <ul>
+          <li>
+            <strong>Kaggle Competitions:</strong> Ranked Top 5% in multiple ML challenges (Titanic, House Prices)
+          </li>
+          <li>
+            <strong>Hackathons:</strong> Winner at IIT Data Science Hackathon 2023
+          </li>
+        </ul>
+      </section>
 
-    <section class="publications">
-      <h2>Publications</h2>
-      <ul>
-        <li>
-          “Time Series Forecasting with LSTM Networks,” IEEE Conference 2027
-        </li>
-        <li>
-          “A Comparative Study of Machine Learning Algorithms in Finance,” IJDS 2027
-        </li>
-      </ul>
-    </section>
-  </main>
+      <section class="certifications">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Deep Learning Specialization - Coursera (by Andrew Ng)</li>
+          <li>Machine Learning A-Z™ - Udemy</li>
+          <li>Certified Data Scientist - IBM</li>
+        </ul>
+      </section>
+
+      <section class="publications">
+        <h2>Publications</h2>
+        <ul>
+          <li>
+            “Time Series Forecasting with LSTM Networks,” IEEE Conference 2027
+          </li>
+          <li>
+            “A Comparative Study of Machine Learning Algorithms in Finance,” IJDS 2027
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <!-- Add particles script -->
+  <script src="assets/js/particles.js"></script>
+  <!-- Your existing scripts -->
 </body>
+
 </html>
