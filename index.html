@@ -7,8 +7,39 @@
   <title>Madhav Deshatwad | Data Scientist @ IIT</title>
   <!-- Only use modern theme -->
   <link rel="stylesheet" href="assets/css/modern-theme.css" />
+
+  <style>
+    /* Typing animation */
+    @keyframes typing {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    .typing-effect {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0;
+      /* animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite; */
+      animation: typing 4s steps(30) 1s infinite, blink 0.75s step-end infinite;
+
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    .highlight {
+      color: #007bff; /* Highlight color for your name */
+    }
+  </style>
 </head>
-<!-- Rest stays the same -->
 
 <body>
   <!-- Add particles background -->
@@ -30,16 +61,11 @@
   </header>
 
   <div class="container">
-    <!-- <div class="page-title">
-      <h1>Page Title</h1>
-      <p>Page description</p>
-    </div> -->
-
     <main class="hero-section">
       <div class="intro-container">
         <img src="assets/images/profile.jpg" alt="Madhav Deshatwad" class="profile-pic" />
         <div class="intro-text">
-          <h1>Hi, I'm <span class="highlight">Madhav Deshatwad</span></h1>
+          <h1 class="typing-effect">Hi, I'm <span class="highlight">Madhav Deshatwad</span></h1>
           <p>
             M.Tech in Data Science @ IIT Palakkad | B.Tech @ IIT Ropar<br />
             Machine Learning • Data Engineering • Quantitative Analysis
@@ -64,7 +90,6 @@
   <script src="assets/js/particles.js"></script>
   <!-- Your existing scripts -->
   <script src="assets/js/nav-toggle.js"></script>
-
 </body>
 
 </html>
