@@ -1,26 +1,4 @@
 
-
-.navbar {
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
 .hero-section {
   display: flex;
   justify-content: center;
@@ -39,6 +17,7 @@
   object-fit: cover;
   object-position: center;
 }
+
 
 
 .highlight {
