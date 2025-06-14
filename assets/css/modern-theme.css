@@ -58,6 +58,24 @@ nav ul {
   flex-wrap: wrap;
 }
 
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center; /* center the items horizontally */
+    gap: 1rem; /* smaller gap vertically */
+  }
+
+  nav ul li {
+    width: 100%; /* each nav item takes full width */
+    text-align: center; /* center text inside */
+  }
+
+  nav a {
+    display: block; /* make anchor fill the li */
+    width: 100%;
+  }
+}
+
 nav a {
   color: white;
   text-decoration: none;
